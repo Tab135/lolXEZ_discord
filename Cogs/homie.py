@@ -21,7 +21,7 @@ class homie(commands.Cog):
     async def F(self, ctx, *, user):
         hearts = ['❤', '💛', '💚', '💙', '💜']
        
-        await ctx.send(f"**{ctx.author.name}** has paid their respect {user}{random.choice(hearts)}")
+        await ctx.send(f"**{ctx.author.name}** has paid their respect to {user}{random.choice(hearts)}")
     @commands.command()
     async def stab(self,ctx,user):
         respone = [f'Holy Shit **{ctx.author.name}** has stabbed **{user}** ',
