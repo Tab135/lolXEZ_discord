@@ -26,7 +26,8 @@ class homie(commands.Cog):
     async def stab(self,ctx,user):
         respone = [f'Holy Shit **{ctx.author.name}** has stabbed **{user}** ',
                    f' **{user}** pulled uno reverse card on  **{ctx.author.name}** ',
-                   f'lol **{ctx.author.name}** accidentally stabbed themself']
+                   f'lol **{ctx.author.name}** accidentally stabbed themself',
+                   f'Gamer down F in chat for **{user}**']
         await ctx.send(random.choice(respone))
 
 
