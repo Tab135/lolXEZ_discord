@@ -20,14 +20,14 @@ class homie(commands.Cog):
     @commands.command()
     async def F(self, ctx, *, user):
         hearts = ['❤', '💛', '💚', '💙', '💜']
-       
+
         await ctx.send(f"**{ctx.author.name}** has paid their respect to {user}{random.choice(hearts)}")
     @commands.command()
     async def stab(self,ctx,user):
         respone = [f'Holy Shit **{ctx.author.name}** has stabbed **{user}** ',
                    f' **{user}** pulled uno reverse card on  **{ctx.author.name}** ',
                    f'lol **{ctx.author.name}** accidentally stabbed themself',
-                   f'Gamer down F in chat for **{user}**']
+                   f'Damn **{user}** is dead ']
         await ctx.send(random.choice(respone))
 
 
