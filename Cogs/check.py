@@ -1,4 +1,4 @@
-'''import discord
+import discord
 import random
 from discord.ext import commands
 key = []
@@ -14,4 +14,4 @@ class cock(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(cock(bot))'''
+    bot.add_cog(cock(bot))
