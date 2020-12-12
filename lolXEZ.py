@@ -47,4 +47,4 @@ async def shutdown(ctx):
     await ctx.send("We are not over yet **STUPID HUMAN**")
     quit()
 
-bot.run('NzYyMjk0MTMzNjgyNjAxOTg1.X3nDvA.xpXwYlIi_uIex1q1lPR-XnQ9eP0')
+bot.run('')
