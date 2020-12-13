@@ -30,7 +30,7 @@ class homie(commands.Cog):
                    f'Damn **{user}** is dead ']
         await ctx.send(random.choice(respone))
     @commands.command()
-    async def blame(self,ctx,user,something,something2: commands.clean_content = None,something3: commands.clean_content = None,something4: commands.clean_content = None,something5: commands.clean_content = None,something6: commands.clean_content = None):
+    async def accuse(self,ctx,user,something,something2: commands.clean_content = None,something3: commands.clean_content = None,something4: commands.clean_content = None,something5: commands.clean_content = None,something6: commands.clean_content = None):
         smt2 = something2 if something2 else ""
         smt3 = something3 if something3 else ""
         smt4 = something4 if something4 else ""
