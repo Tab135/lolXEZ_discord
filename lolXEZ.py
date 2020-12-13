@@ -18,6 +18,7 @@ async def help(ctx):
         embedVar.add_field(name="#spin [user1] [user2] [user3]", value="russian roulette", inline=True)
         embedVar.add_field(name="#stab [user1] ", value="stab someone", inline=True)
         embedVar.add_field(name="#shutdown ", value="shutdown the bot :((", inline=True)
+        embedVar.add_field(name="#accuse [user] [something] ", value="accuse someone for something", inline=True)
         await ctx.send(embed=embedVar)
 @bot.command()
 async def load(ctx, extension):
