@@ -54,8 +54,52 @@ class Ex(commands.Cog):
         else:
             await ctx.send(f'**{user2}** was a lucky asshole')
             await ctx.send(f'**{user3}** was unlucky and got shot')
+##########################################################################################################################
 
+    @commands.command()
+    async def xổ_số(self, ctx):
 
+        emojis = ['🍎', '🍊', '🍐' ,'🍋', '🍉', '🍇']
+        a = random.choice(emojis)
+        b = random.choice(emojis)
+        c = random.choice(emojis)
+        slotmachine = f"**[ | {a} | {b} | {c} |]**"
+
+        if (a == b == c):
+            embedVar = discord.Embed(title="-----SLOT------", color=0xf1c40f)
+            embedVar.add_field(name=f"{slotmachine}", value=f"{ctx.author.mention} VL hay đấy bạn trúng hết cả 3 ")
+            await ctx.send(embed=embedVar)
+
+        elif (a == b) or (a == c) or (b == c):
+            embedVar = discord.Embed(title="-----SLOT------", color=0xe74c3c)
+            embedVar.add_field(name=f"{slotmachine}", value=f"{ctx.author.mention} chúc mừng bạn trúng được 2 cái")
+            await ctx.send(embed=embedVar)
+        else:
+            embedVar = discord.Embed(title="-----SLOT------", color=0x3498db)
+            embedVar.add_field(name=f"{slotmachine}", value=f"{ctx.author.mention} sorry không trúng cái nào cả 😢")
+            await ctx.send(embed=embedVar)
+    @commands.command()
+    async def tung_xu(self, ctx):
+        coinsides = ['mặt ngửa', 'mặt sấp','oof rớt xu xuống đất rồi ']
+        await ctx.send(f"**{ctx.author.mention}** đã tung một đồng xu và được **{random.choice(coinsides)}**!")
+    @commands.command()
+    async def quay_súng(self,ctx,user1,user2,user3):
+        chamber = random.randint(1,2)
+
+        if chamber == 1:
+            await ctx.send(f'**{user1}** đã không may mắn và bị bắn')
+            await ctx.send(f'OH may thế **{user2}** đã thoát chết')
+            await ctx.send(f'**{user3}** cũng rất may mắn và thoát chết')
+            return
+        else:
+            await ctx.send(f'**{user1}** đã rất may mắn và thoát chết')
+        chamber = random.randint(1,2)
+        if chamber == 1:
+            await ctx.send(f'**{user2}** đã không may mắn và bị bắn')
+            await ctx.send(f'**{user3}** đã rất may mắn và thoát chết')
+        else:
+            await ctx.send(f'**{user2}** đã rất may mắn và thoát chết')
+            await ctx.send(f'**{user3}** đã không may mắn và bị bắn')
 
 
 def setup(bot):
