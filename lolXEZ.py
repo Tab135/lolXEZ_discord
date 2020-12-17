@@ -72,4 +72,4 @@ async def tắt(ctx):
     time.sleep(2)
     await ctx.send(f'{ctx.author.mention} tao sẽ còn quay lại')
     quit()
-bot.run('NzYyMjk0MTMzNjgyNjAxOTg1.X3nDvA.xpXwYlIi_uIex1q1lPR-XnQ9eP0')
+bot.run('')
