@@ -62,7 +62,7 @@ async def shutdown(ctx):
     await ctx.send("goodbye cruel world.....")
     time.sleep(1)
     await ctx.send("We are not over yet **STUPID HUMAN**")
-    quit()
+    os._exit(1)
 
 @bot.command()
 async def tắt(ctx):
@@ -71,5 +71,5 @@ async def tắt(ctx):
     await ctx.send('tạm biệt thế giới')
     time.sleep(2)
     await ctx.send(f'{ctx.author.mention} tao sẽ còn quay lại')
-    quit()
+    os._exit(1)
 bot.run('')
