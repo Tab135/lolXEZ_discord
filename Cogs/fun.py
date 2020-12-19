@@ -39,7 +39,6 @@ class Ex(commands.Cog):
     @commands.command()
     async def spin(self,ctx,user1,user2,user3):
         chamber = random.randint(1,2)
-
         if chamber == 1:
             await ctx.send(f'**{user1}** was unlucky and got shot')
             await ctx.send(f'**{user2}** was a lucky asshole')
@@ -55,16 +54,13 @@ class Ex(commands.Cog):
             await ctx.send(f'**{user2}** was a lucky asshole')
             await ctx.send(f'**{user3}** was unlucky and got shot')
 ##########################################################################################################################
-
     @commands.command()
     async def xổ_số(self, ctx):
-
         emojis = ['🍎', '🍊', '🍐' ,'🍋', '🍉', '🍇']
         a = random.choice(emojis)
         b = random.choice(emojis)
         c = random.choice(emojis)
         slotmachine = f"**[ | {a} | {b} | {c} |]**"
-
         if (a == b == c):
             embedVar = discord.Embed(title="-----SLOT------", color=0xf1c40f)
             embedVar.add_field(name=f"{slotmachine}", value=f"{ctx.author.mention} VL hay đấy bạn trúng hết cả 3 ")
