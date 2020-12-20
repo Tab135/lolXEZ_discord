@@ -8,6 +8,7 @@ bot.remove_command("help")
 @bot.event
 async def on_ready():
     print("lolXEZ is online")
+    await bot.change_presence(activity=discord.Game(name='Waiting for commands'))
 @bot.command()
 async def help(ctx):
         embedVar = discord.Embed(title="lolXEZ help menu", color=0x00ff00)
